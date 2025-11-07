@@ -33,7 +33,7 @@ class FeatureModelForm(FlaskForm):
     )
     publication_doi = StringField("Publication DOI", validators=[Optional(), URL()])
     tags = StringField("Tags (separated by commas)")
-    version = StringField("UVL Version")
+    version = StringField("Poke Version")
     authors = FieldList(FormField(AuthorForm))
 
     class Meta:
